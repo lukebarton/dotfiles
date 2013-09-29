@@ -1,3 +1,4 @@
-sublime2/User/Package\ Control.sublime-settings
-sublime2/User/Package Control.last-run
+sublime3/User/*
+!sublime3/User/*.sublime-settings
+!sublime3/User/*.sublime-keymap
 git/gitconfig.symlink
