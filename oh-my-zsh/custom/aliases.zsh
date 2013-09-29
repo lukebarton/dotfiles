@@ -1,3 +1,3 @@
 alias reload!='. ~/.zshrc'
 
-function mkdircd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
+function mkcd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
