@@ -9,11 +9,11 @@ set -e
 echo ''
 
 info () {
-  printf "  [ \033[00;34m..\033[0m ] $1"
+  printf "  [ \033[00;34m..\033[0m ] $1 \n"
 }
 
 user () {
-  printf "\r  [ \033[0;33m?\033[0m ] $1 "
+  printf "\r  [ \033[0;33m?\033[0m ] $1 \n"
 }
 
 success () {
@@ -26,35 +26,13 @@ fail () {
   exit
 }
 
-setup_gitconfig () {
-  if ! [ -f git/gitconfig.symlink ]
-  then
-    info 'setup gitconfig'
-
-    git_credential='cache'
-    if [ "$(uname -s)" == "Darwin" ]
-    then
-      git_credential='osxkeychain'
-    fi
-
-    user ' - What is your github author name?'
-    read -e git_authorname
-    user ' - What is your github author email?'
-    read -e git_authoremail
-
-    sed -e "s/AUTHORNAME/$git_authorname/g" -e "s/AUTHOREMAIL/$git_authoremail/g" -e "s/GIT_CREDENTIAL_HELPER/$git_credential/g" git/gitconfig.symlink.example > git/gitconfig.symlink
-
-    success 'gitconfig'
-  fi
-}
-
 link_files () {
   ln -s $1 $2
   success "linked $1 to $2"
 }
 
 install_dotfiles () {
-  info 'installing dotfiles'
+  info 'installing dotfile symlinks'
 
   overwrite_all=false
   backup_all=false
@@ -120,20 +98,25 @@ install_dotfiles () {
   done
 }
 
-setup_gitconfig
-install_dotfiles
+init_files=$DOTFILES_ROOT/**/init.sh
+install_files=$DOTFILES_ROOT/**/install.sh
 
-# If we are on a mac, lets install and setup homebrew
-if [ "$(uname -s)" == "Darwin" ]
-then
-  info "installing dependencies"
-  if . bin/dot > /tmp/dotfiles-dot 2>&1
-  then
-    success "dependencies installed"
-  else
-    fail "error installing dependencies"
-  fi
-fi
+info "initialising..."
+for file in $init_files
+do 
+  info "initialising $file"
+  $file && success $file || fail $file
+done
+
+echo ''
+info "installing..."
+for file in $install_files
+do 
+  info "installing $file"
+  $file && success $file || fail $file 
+done
+
+install_dotfiles
 
 echo ''
 echo '  All installed!'
