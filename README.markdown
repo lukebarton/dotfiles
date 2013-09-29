@@ -64,5 +64,5 @@ There's a few special files in the hierarchy.
 ## thanks
 
 I forked [Zach Holman](http://github.com/holman)' excellent
-[dotfiles](http://github.com/holman/dotfiles). Zach's dotfiles were an easy way 
+[dotfiles](http://github.com/holman/dotfiles). Zach's dotfiles were an easy way
 to jump ship to zsh.

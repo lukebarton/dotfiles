@@ -16,5 +16,5 @@ fi
 
 if [[ -a $DOTFILES/oh-my-zsh/zshrc ]]
 then
-  source $DOTFILES/oh-my-zsh/zshrc 
+  source $DOTFILES/oh-my-zsh/zshrc
 fi

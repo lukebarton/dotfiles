@@ -103,7 +103,7 @@ install_files=$DOTFILES_ROOT/**/install.sh
 
 info "initialising..."
 for file in $init_files
-do 
+do
   info "initialising $file"
   $file && success $file || fail $file
 done
@@ -111,9 +111,9 @@ done
 echo ''
 info "installing..."
 for file in $install_files
-do 
+do
   info "installing $file"
-  $file && success $file || fail $file 
+  $file && success $file || fail $file
 done
 
 install_dotfiles
