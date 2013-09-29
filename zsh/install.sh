@@ -15,5 +15,5 @@ chsh -s /usr/local/bin/zsh $USER
 # Fix env bug
 if ! [ -f /etc/zshrc ]
 then
-	sudo mv /etc/{zshenv,zshrc}
+  sudo mv /etc/{zshenv,zshrc}
 fi
