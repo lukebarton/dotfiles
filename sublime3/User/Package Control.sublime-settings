@@ -3,7 +3,10 @@
 	[
 		"BracketHighlighter",
 		"EditorConfig",
+		"Emmet",
 		"GitGutter",
+		"LESS",
+		"Pretty JSON",
 		"SideBarEnhancements",
 		"Theme - Flatland"
 	]
