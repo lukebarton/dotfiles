@@ -1,6 +1,9 @@
+user () {
+  printf "\r  [ \033[0;33m?\033[0m ] $1"
+}
+
 if ! [ -f git/gitconfig.symlink ]
 then
-  info 'setup gitconfig'
 
   git_credential='cache'
   if [ "$(uname -s)" == "Darwin" ]
@@ -15,5 +18,4 @@ then
 
   sed -e "s/AUTHORNAME/$git_authorname/g" -e "s/AUTHOREMAIL/$git_authoremail/g" -e "s/GIT_CREDENTIAL_HELPER/$git_credential/g" git/gitconfig.symlink.example > git/gitconfig.symlink
 
-  success 'gitconfig'
 fi
