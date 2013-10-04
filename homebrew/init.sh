@@ -8,4 +8,6 @@ then
     echo "    https://github.com/mxcl/homebrew/wiki/installation"
     exit
   fi
+  brew tap phinze/homebrew-cask
+  brew install brew-cask
 fi
