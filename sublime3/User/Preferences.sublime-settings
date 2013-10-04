@@ -1,6 +1,7 @@
 {
 	"color_scheme": "Packages/Theme - Flatland/Flatland Dark.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
+	"flatland_sidebar_tree_xsmall": true,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -9,6 +10,5 @@
 	"theme": "Flatland Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
-	"trim_trailing_white_space_on_save": true,
-	"flatland_sidebar_tree_xsmall" : true
+	"trim_trailing_white_space_on_save": true
 }
