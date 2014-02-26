@@ -2,12 +2,19 @@
 	"installed_packages":
 	[
 		"BracketHighlighter",
+		"Color Scheme - Frontend Delight",
 		"EditorConfig",
 		"Emmet",
+		"FileDiffs",
 		"GitGutter",
 		"LESS",
+		"nginx",
+		"Paste as Column",
 		"Pretty JSON",
+		"Puppet",
+		"SCSS",
 		"SideBarEnhancements",
+		"SublimeGit",
 		"Theme - Flatland"
 	]
 }
