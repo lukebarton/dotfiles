@@ -10,4 +10,5 @@ then
   fi
   brew tap phinze/homebrew-cask
   brew install brew-cask
+  brew tap caskroom/versions
 fi
