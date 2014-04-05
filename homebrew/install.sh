@@ -4,5 +4,4 @@ brew cask install vlc spotify
 brew cask install skype
 brew cask install dropbox
 brew cask install divvy
-brew cask install iterm2
-brew cask install keyremap4macbook pc-keyboardhack
+brew cask install keyremap4macbook pckeyboardhack
