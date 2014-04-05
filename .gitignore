@@ -1,4 +1,1 @@
-sublime3/User/*
-!sublime3/User/*.sublime-settings
-!sublime3/User/*.sublime-keymap
 git/gitconfig.symlink
