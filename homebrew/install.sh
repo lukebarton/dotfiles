@@ -1,6 +1,5 @@
 brew cask install google-chrome
 brew cask install firefox
-brew cask install iterm2
 brew cask install unrarx
 brew cask install alfred
 brew cask install vlc
