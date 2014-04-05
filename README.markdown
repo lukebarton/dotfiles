@@ -10,7 +10,9 @@ subject](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/).
 
 ## install
 
-Run this:
+Install XCode via AppStore
+
+Then run this:
 
 ```sh
 git clone https://github.com/lukebarton/dotfiles.git ~/.dotfiles
