@@ -7,6 +7,5 @@ brew cask install vlc
 brew cask install skype
 brew cask install dropbox
 brew cask install divvy
-brew cask install sublime-text3
 brew cask install keyremap4macbook
 brew cask install pckeyboardhack
