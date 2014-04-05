@@ -1,7 +1,12 @@
-brew cask install google-chrome firefox
-brew cask install iterm2 unrarx alfred
-brew cask install vlc spotify
+brew cask install google-chrome
+brew cask install firefox
+brew cask install iterm2
+brew cask install unrarx
+brew cask install alfred
+brew cask install vlc
+brew cask install spotify
 brew cask install skype
 brew cask install dropbox
 brew cask install divvy
-brew cask install keyremap4macbook pckeyboardhack
+brew cask install keyremap4macbook
+brew cask install pckeyboardhack
