@@ -4,7 +4,6 @@ brew cask install iterm2
 brew cask install unrarx
 brew cask install alfred
 brew cask install vlc
-brew cask install spotify
 brew cask install skype
 brew cask install dropbox
 brew cask install divvy
