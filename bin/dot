@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd $DOTFILES
+git pull
+script/bootstrap
